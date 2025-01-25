@@ -1,9 +1,11 @@
+import Countries from "../Countries/Countries";
+import'./country.css'
 
 const Country = ({country}) => {
-    console.log(country)
+    const {name} = country;
     return (
-        <div>
-            <h3>Country Name</h3>
+        <div className="country">
+            <h3>Country Name : {name}</h3>
         </div>
     );
 };
